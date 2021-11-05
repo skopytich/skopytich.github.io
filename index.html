@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKopytich</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-burger">
+        <span class="nav-burger__element"></span>
+    </div>
+    <nav class="nav-menu">
+        <ul class="nav-menu__list">
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#">Home</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#">About</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#">Skills</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#">Portfolio</a></li>
+        </ul>
+    </nav>
+<!-- first page starts here -->
+    <header class="head-page">
+
+    </header>
+
+
+    <!-- scripts-->
+    <script src="./libraries/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./libraries/mixitup.min.js"></script>
+    
+    <script>
+        let wrapperMenu = document.querySelector('.nav-burger');
+
+        wrapperMenu.addEventListener('click', function(){
+        wrapperMenu.classList.toggle('open');  
+})
+    </script>
+</body>
+</html>
