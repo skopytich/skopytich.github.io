@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
 }
 
-/* just the hamburger */
+/* the real hamburger, not a macdonald's one */
 .nav-burger {
     position: fixed;
     display: flex;
@@ -82,7 +82,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     transform: translateX(100%);
-    transition: all .5s ease-in-out;
+    transition: all .5s cubic-bezier(0.68,-0.55, 0.58, 1);
 }
 
 .nav-menu_displayed {
