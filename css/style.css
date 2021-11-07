@@ -10,6 +10,11 @@ body {
     line-height: 1.5;
 }
 
+a[role='link'] {
+    color: #20c997;
+    text-decoration: none;
+}
+
 /* the real hamburger, not a macdonald's one */
 .nav-burger {
     position: fixed;
@@ -118,7 +123,114 @@ body {
     color: #20c997;
 }
 
-.header {
+.home {
     background: #000;
+    color:#fff;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__name {
+    font-size: 9rem;
+    font-weight: 700;
+}
+
+.home__h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 2rem 0;
+    position: relative;
+    padding-left: 52px;
+}
+
+.home__h2::before {
+    position: absolute;
+    content: '';
+    background: #fff;
+    height: 1px;
+    width: 40px;
+    left: 0;
+    top: 50%;
+}
+
+.home__p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-left: 52px;
+}
+
+.section {
+    padding: 10rem 0;
+    background: #fff;
+}
+
+.section-inner {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.section__header {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.section__p {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.section__p_mod {
+    max-width: 380px;
+    color: #a0a0a0;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.section-about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.section-about__element {
+    width: 48%;
+    min-width: 320px;
+    border: 1px solid blue;
+}
+
+.section-about__element:nth-child(1) {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.about-list {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding-left: 0;
+    border: 1px solid green;
+}
+
+.about-list__element:not(:last-child) {
+    padding: 1em;
+    border-bottom: 1px solid #a0a0a0;;
+}
+
+.about-list__element_bold {
+    font-weight: 600;
+}
+
+.section-about__my-photo {
+    align-self: center;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 1px solid red;
+    margin-right: 15px;
 }

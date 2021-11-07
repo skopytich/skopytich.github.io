@@ -21,18 +21,54 @@
     <div class="nav-burger" id="nav-burger">
         <span class="nav-burger__element"></span>
     </div>
+    <!-- navigation menu-->
     <nav class="nav-menu" id="nav-menu">
         <ul class="nav-menu__list">
-            <li class="nav-menu__li"><a class="nav-menu__link" href="#">Home</a></li>
-            <li class="nav-menu__li"><a class="nav-menu__link" href="#">About</a></li>
-            <li class="nav-menu__li"><a class="nav-menu__link" href="#">Skills</a></li>
-            <li class="nav-menu__li"><a class="nav-menu__link" href="#">Portfolio</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#home">Home</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#about">About</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#skills">Skills</a></li>
+            <li class="nav-menu__li"><a class="nav-menu__link" href="#portfolio">Portfolio</a></li>
         </ul>
     </nav>
-    <!-- first page starts here -->
-    <header class="header">
-
+    <!-- the first page starts here -->
+    <header id="home" class="home">
+        <section class="home-section">
+            <h1 class="home__name">Stas Kopytich</h1>
+            <h2 class="home__h2">junior frontend developer</h2>
+            <p class="home__p">welcome to my <a href="#" role="link">portfolio</a></p>
+        </section>
     </header>
+    <!-- main content of the site-->
+    <main class="main">
+        <!-- the second page starts here-->
+        <section id="about" class="section">
+            <section class="section-inner">
+                <h2 class="section__header">About Me</h2>
+                <p class="section__p section__p_mod">In this section, you will find more detailed information about me.</p>
+                <section class="section-about">
+                    <article class="section-about__element">
+                        <div class="section-about__my-photo"></div>
+                        <ul class="about-list">
+                            <li class="about-list__element">
+                                <span class="about-list__element_bold">Name:</span> Stanislav Kopytich
+                            </li>
+                            <li class="about-list__element">
+                                <span class="about-list__element_bold">Mobile:</span> <a href="tel:+79198905545" role="link">+79198905545</a>
+                            </li>
+                            <li class="about-list__element">
+                                <span class="about-list__element_bold">Birthday:</span>  27 April, 1998
+                            </li>
+                            <li class="about-list__element">
+                                <span class="about-list__element_bold">Current City:</span> Stanislav Kopytich
+                            </li>
+                            <li class="about-list__element"></li>
+                        </ul>
+                    </article>
+                    <article class="section-about__element"></article>
+                </section>
+            </section>
+        </section>
+    </main>
     <!-- scripts-->
     <script src="./js/libraries/aos.js"></script>
     <script src="./js/libraries/mixitup.min.js"></script>
