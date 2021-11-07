@@ -25,7 +25,7 @@ a[role='link'] {
     width: 100px;
     top: 0px;
     right: 0px;
-    z-index: 2;
+    z-index: 999;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
@@ -88,6 +88,7 @@ a[role='link'] {
     font-weight: 700;
     transform: translateX(100%);
     transition: all .5s cubic-bezier(0.68,-0.55, 0.58, 1);
+    z-index: 998;
 }
 
 .nav-menu_displayed {
@@ -135,6 +136,7 @@ a[role='link'] {
 .home__name {
     font-size: 9rem;
     font-weight: 700;
+    text-shadow: 2px 2px rgb(23, 19, 200);
 }
 
 .home__h2 {
@@ -144,6 +146,7 @@ a[role='link'] {
     margin: 2rem 0;
     position: relative;
     padding-left: 52px;
+    z-index: 0;
 }
 
 .home__h2::before {
@@ -154,6 +157,7 @@ a[role='link'] {
     width: 40px;
     left: 0;
     top: 50%;
+    z-index: 0;
 }
 
 .home__p {
@@ -198,28 +202,32 @@ a[role='link'] {
 }
 
 .section-about__element {
-    width: 48%;
-    min-width: 320px;
-    border: 1px solid blue;
+   width: 49%;
 }
 
 .section-about__element:nth-child(1) {
     display: flex;
     flex-flow: row nowrap;
+    height: 230px;
+    min-width: 460px;
+}
 
+.section-about__element:nth-child(2) { 
+  min-width: 460px;
+  padding: 0 2rem;
 }
 
 .about-list {
+    width: 100%;
     list-style-type: none;
     font-weight: 400;
     font-size: 1.6rem;
     padding-left: 0;
-    border: 1px solid green;
 }
 
 .about-list__element:not(:last-child) {
     padding: 1em;
-    border-bottom: 1px solid #a0a0a0;;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .about-list__element_bold {
@@ -229,8 +237,24 @@ a[role='link'] {
 .section-about__my-photo {
     align-self: center;
     min-width: 200px;
-    height: 200px;
+    min-height: 200px;
     border-radius: 50%; 
-    border: 1px solid red;
-    margin-right: 15px;
+    margin-right: 10px;
+    background-image: url(../images/me.jpg);
+    background-size: cover;
+    box-shadow: 0.1px 0.1px 4px #a0a0a0,
+                -0.1px -0.1px 4px #a0a0a0;
+}
+
+.section__h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.section__h3_green {
+    color: #20c997;
+}
+
+.section__p_about-mod {
+    padding: 1rem 0;
 }
