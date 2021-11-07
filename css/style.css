@@ -213,8 +213,10 @@ a[role='link'] {
 }
 
 .section-about__element:nth-child(2) { 
-  min-width: 460px;
-  padding: 0 2rem;
+  min-width: 300px;
+  flex: 1;
+  margin-left: 2rem;
+  border: 1px solid red;
 }
 
 .about-list {
