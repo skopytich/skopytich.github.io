@@ -322,20 +322,43 @@ a[role='link'] {
     margin-right: -2rem;
 }
 
-.portfolio-list__li {
+.portfolio-list__link {
     height: 200px;
     width: 300px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 2rem;
-    background: #F8F8F8;
+    position: relative;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
 }
 
-.portfolio-list__li:not(:last-child) {
+.portfolio-list__link:not(:last-child) {
     margin-right: 2rem;
 }
 
+.portfolio-list__li {
+    background: #F8F8F8;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: filter 0.3s,
+                transform 0.3s ease-in-out;
+}
+
 .portfolio-list__li:hover {
-    filter: blur(2px);
+    transform: scale(1.2);
+    filter: grayscale(100%) blur(2px);
+} 
+
+.portolio-list__hover-intro {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    
+}
+
+/* projects styles will be here */
+.alisayed {
+    background-image: url(../images/portfolio/alisayed.jpg);
 }
