@@ -1,4 +1,5 @@
 AOS.init(); // AOS Initialization
+let mixer = mixitup('.portfolio-list'); // mixitup 
 
 
 // Runs the hamburger animation
@@ -12,3 +13,4 @@ wrapperMenu.addEventListener('click', function () {
 document.getElementById('nav-burger').onclick = function () {
     document.getElementById('nav-menu').classList.toggle('nav-menu_displayed');
 };
+

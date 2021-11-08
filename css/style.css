@@ -124,6 +124,7 @@ a[role='link'] {
     color: #20c997;
 }
 
+/* home page */
 .home {
     background: #000;
     color:#fff;
@@ -172,6 +173,8 @@ a[role='link'] {
     background: #fff;
 }
 
+
+/* section styles */
 .section-inner {
     max-width: 75%;
     margin: 0 auto;
@@ -195,6 +198,7 @@ a[role='link'] {
     margin-bottom: 3rem;
 }
 
+/* page about me styles */
 .section-about {
     display: flex;
     flex-flow: row wrap;
@@ -202,7 +206,9 @@ a[role='link'] {
 }
 
 .section-about__element {
-   width: 49%;
+   /* width: 49%; */
+   flex-basis: 49%;
+   flex: 1;
 }
 
 .section-about__element:nth-child(1) {
@@ -214,7 +220,6 @@ a[role='link'] {
 
 .section-about__element:nth-child(2) { 
   min-width: 300px;
-  flex: 1;
   margin-left: 2rem;
 }
 
@@ -258,4 +263,79 @@ a[role='link'] {
 
 .section__p_about-mod {
     padding: 1rem 0;
+}
+
+.section_gray {
+    background: #F8F8F8;
+}
+
+/* skills page styles */
+.skills-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin-top: -2rem;
+    margin-right: -4rem;
+}
+
+.skills-item__element {
+    flex-basis: 400px;
+    flex-grow: 1;
+    padding-top: 4rem;
+    padding-right: 4rem;
+}
+
+.section__h3_skill-padding {
+    padding-bottom: 2rem;
+}
+
+/* portfolio page styles */
+.portfolio-controls {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.portfolio-controls__button {
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio-controls__button:focus {
+    color: #20c997;
+}
+
+.portfolio-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin-right: -2rem;
+}
+
+.portfolio-list__li {
+    height: 200px;
+    width: 300px;
+    border: 1px solid red;
+    margin-bottom: 2rem;
+    background: #F8F8F8;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-list__li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.portfolio-list__li:hover {
+    filter: blur(2px);
 }

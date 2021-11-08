@@ -30,21 +30,22 @@
             <li class="nav-menu__li"><a class="nav-menu__link" href="#portfolio">Portfolio</a></li>
         </ul>
     </nav>
-    <!-- the first page starts here -->
+    <!-- header page starts here -->
     <header id="home" class="home">
         <section class="home-section">
             <h1 class="home__name">Stas Kopytich</h1>
             <h2 class="home__h2">junior frontend developer</h2>
-            <p class="home__p">welcome to my <a href="#" role="link">portfolio</a></p>
+            <p class="home__p">welcome to my <a href="#portfolio" role="link">portfolio</a></p>
         </section>
     </header>
     <!-- main content of the site-->
     <main class="main">
-        <!-- the second page starts here-->
+        <!-- about page starts here-->
         <section id="about" class="section">
             <section class="section-inner">
                 <h2 class="section__header">About Me</h2>
-                <p class="section__p section__p_mod">In this section, you will find more detailed information about me.</p>
+                <p class="section__p section__p_mod">In this section, you will find more detailed information about me.
+                </p>
                 <section class="section-about">
                     <article class="section-about__element">
                         <div class="section-about__my-photo"></div>
@@ -53,10 +54,11 @@
                                 <span class="about-list__element_bold">Name:</span> Stanislav Kopytich
                             </li>
                             <li class="about-list__element">
-                                <span class="about-list__element_bold">Mobile:</span> <a href="tel:+79198905545" role="link"> +79198905545</a>
+                                <span class="about-list__element_bold">Mobile:</span> <a href="tel:+79198905545"
+                                    role="link"> +79198905545</a>
                             </li>
                             <li class="about-list__element">
-                                <span class="about-list__element_bold">Birthday:</span>  27 April, 1998
+                                <span class="about-list__element_bold">Birthday:</span> 27 April, 1998
                             </li>
                             <li class="about-list__element">
                                 <span class="about-list__element_bold">Current City:</span> Moscow
@@ -65,13 +67,86 @@
                         </ul>
                     </article>
                     <article class="section-about__element">
-                        <h3 class="section__h3">I'm <span class="section__h3_green">Stas Kopytich,</span> a junior frontend developer</h3>
-                        <p class="section__p section__p_about-mod">Hi there, I've been interested in IT, since I was in high school, so I went to college right after graduating. 
+                        <h3 class="section__h3">I'm <span class="section__h3_green">Stas Kopytich,</span> a junior
+                            frontend developer</h3>
+                        <p class="section__p section__p_about-mod">Hi there, I've been interested in IT, since I was in
+                            high school, so I went to college right after graduating.
                             Now I'm diving into the frontend field, learning HTML, CSS and Javascript.</p>
-                        <p class="section__p section__p_about-mod">In my leisure time, I like to devote time studying English, to go out for a walk listening to music, nothing special in a nutshell.</p>
+                        <p class="section__p section__p_about-mod">In my leisure time, I like to devote time studying
+                            English, to go out for a walk listening to music, nothing special in a nutshell.</p>
                     </article>
                 </section>
             </section>
+        </section>
+        <!-- skill page starts here-->
+        <section id="skills" class="section section_gray">
+            <section class="section-inner">
+                <h2 class="section__header">Skills</h2>
+                <p class="section__p section__p_mod">My current level of knowledge in some technologies and programs.
+                </p>
+                <!-- skill items-->
+                <section class="skills-item">
+                    <article class="skills-item__element">
+                        <h3 class="section__h3 section__h3_skill-padding">HTML 5</h3>
+                        <p class="section__p">I learned HTML fundamentals such as document structure, validation,
+                            semantic,
+                            accessibility, links, buttons, forms, tables, text, images etc.</p>
+                    </article>
+                    <article class="skills-item__element">
+                        <h3 class="section__h3 section__h3_skill-padding">CSS 3</h3>
+                        <p class="section__p">I'm well acquainted with base syntax, simle & composite selectors,
+                            pseudo-elements & pseudo-classes,
+                            specificity, box model, positioning, floating elements, cacsacing, inheritance, transitions,
+                            animations, media queries, vendor prefixes etc.</p>
+                    </article>
+                    <article class="skills-item__element">
+                        <h3 class="section__h3 section__h3_skill-padding">Flexbox</h3>
+                        <p class="section__p">I feel comfortable with building simple layout pages using flexbox.</p>
+                    </article>
+                    <article class="skills-item__element">
+                        <h3 class="section__h3 section__h3_skill-padding">BEM-naming</h3>
+                        <p class="section__p">I know what block/element/modificator is, the difference between them,
+                            how to name them properly.
+                        </p>
+                    </article>
+                    <article class="skills-item__element">
+                        <h3 class="section__h3 section__h3_skill-padding">Javascript</h3>
+                        <p class="section__p">I learned its fundamentals such as code structure, basic math & logical
+                            operators, data types, functions, objects, built some simple elements like a hamburger menu.
+                            Right now, I continue studying Javascript through a book doing exercises.</p>
+                    </article>
+                    <article class="skills-item__element">
+                        <h3 class="section__h3 section__h3_skill-padding">English</h3>
+                        <p class="section__p">Approximately, my CERF level is B1+, and it's gradually growing.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <!-- portfolio page starts here-->
+        <section id="portfolio" class="section">
+            <section class="section-inner">
+                <h2 class="section__header">Portfolio</h2>
+                <p class="section__p section__p_mod">Here you can see my portfolio, where the latest projects are
+                    presented.</p>
+                    <!-- buttons that sorting projects-->
+                    <section class="portfolio-controls">
+                        <button class='portfolio-controls__button' type="button" data-filter="all">All</button>
+                        <button class='portfolio-controls__button' type="button" data-filter=".websites">Websites</button>
+                        <button class='portfolio-controls__button' type="button" data-filter=".apps">Apps</button>
+                        <button class='portfolio-controls__button' type="button" data-filter=".other">Other</button>
+                    </section>
+                    <!-- projects list-->
+                    <ul class="portfolio-list">
+                        <li class="portfolio-list__li alisayed mix websites">website</li>
+                        <li class="portfolio-list__li mix apps">app</li>
+                        <li class="portfolio-list__li mix websites">wesbsite</li>
+                        <li class="portfolio-list__li mix other">other</li>
+                        <li class="portfolio-list__li mix other">other</li>
+                        <li class="portfolio-list__li mix websites">websites</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
         </section>
     </main>
     <!-- scripts-->
