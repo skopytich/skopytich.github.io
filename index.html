@@ -20,7 +20,7 @@
 
 <body>
     <!-- Burger menu rules over here -->
-    <div class="nav-burger" id="nav-burger">
+    <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" class="nav-burger" id="nav-burger">
         <span class="nav-burger__element"></span>
     </div>
     <!-- navigation menu-->
@@ -35,20 +35,23 @@
     <!-- header page starts here -->
     <header id="home" class="home">
         <section class="home-section">
-            <h1 class="home__name">Stas Kopytich</h1>
-            <h2 class="home__h2">junior frontend developer</h2>
-            <p class="home__p">welcome to my <a href="#portfolio" role="link">portfolio</a></p>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="home__name">Stas Kopytich</h1>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="home__h2">
+                junior frontend developer</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true" class="home__p">
+                welcome to my <a href="#portfolio" role="link">portfolio</a></p>
         </section>
     </header>
     <!-- main content of the site-->
     <main class="main">
         <!-- about page starts here-->
         <section id="about" class="section">
-            <section class="section-inner">
+            <section data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="section-inner">
                 <h2 class="section__header">About Me</h2>
                 <p class="section__p section__p_mod">In this section, you will find more detailed information about me.
                 </p>
                 <section class="section-about">
+                    <!-- about me table-->
                     <article class="section-about__element">
                         <div class="section-about__my-photo"></div>
                         <ul class="about-list">
@@ -68,7 +71,9 @@
                             <li class="about-list__element"></li>
                         </ul>
                     </article>
-                    <article class="section-about__element">
+                    <!--about me text -->
+                    <article data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true"
+                        class="section-about__element">
                         <h3 class="section__h3">I'm <span class="section__h3_green">Stas Kopytich,</span> a junior
                             frontend developer</h3>
                         <p class="section__p section__p_about-mod">Hi there, I've been interested in IT, since I was in
@@ -82,7 +87,7 @@
         </section>
         <!-- skill page starts here-->
         <section id="skills" class="section section_gray">
-            <section class="section-inner">
+            <section data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="section-inner">
                 <h2 class="section__header">Skills</h2>
                 <p class="section__p section__p_mod">My current level of knowledge in some technologies and programs.
                 </p>
@@ -126,7 +131,7 @@
         </section>
         <!-- portfolio page starts here-->
         <section id="portfolio" class="section">
-            <section class="section-inner">
+            <section data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="section-inner">
                 <h2 class="section__header">Portfolio</h2>
                 <p class="section__p section__p_mod">Here you can see my portfolio, where the latest projects are
                     presented.</p>
