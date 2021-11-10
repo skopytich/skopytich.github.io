@@ -108,8 +108,8 @@
     }
 
     .portfolio-list__li {
-        height: 200px;
-        width: 300px;
+        height: 250px;
+        width: 400px;
     }
 
     .section-inner {
@@ -145,6 +145,17 @@
     }
 }
 
+@media screen and (max-width:450px) {
+    .portfolio-list__li {
+        height: 215px;
+        width: 330px;
+    }
+
+    .portfolio-controls {
+        max-width: 330px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .about-list {
         font-size: 1rem;
@@ -157,5 +168,14 @@
 
     .section-about__element:nth-child(1) {
         height: 150px;
+    }
+
+    .portfolio-list__li {
+        height: 200px;
+        width: 300px;
+    }
+
+    .portfolio-controls {
+        max-width: 300px;
     }
 }
