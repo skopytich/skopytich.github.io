@@ -333,7 +333,7 @@ a[role='link'] {
     margin-bottom: 2rem;
 }
 
-.portfolio-list__li:not(:last-child) {
+.portfolio-list__li {
     margin-right: 2rem;
 }
 

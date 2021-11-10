@@ -58,7 +58,7 @@
         margin-right: 0rem;
     }
 
-    .portfolio-list__li:not(:last-child) {
+    .portfolio-list__li {
         margin-right: 0rem;
     }
 
