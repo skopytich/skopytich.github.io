@@ -1,0 +1,161 @@
+@media (max-width: 2560px) {
+    .nav-burger__element {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .section-about__element:nth-child(1) { 
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .section-about__element:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .home__name {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .section-inner {
+        max-width: 85%;
+    }
+
+    .home__name {
+        font-size: 7rem;
+    }
+    .nav-burger {
+        top: -2rem;
+        right: -2rem;
+    }
+
+    .nav-burger__element {
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .portfolio-list__li {
+        height: 300px;
+        width: 500px;
+    }
+
+    .portfolio-list {
+        margin-right: 0rem;
+    }
+
+    .portfolio-list__li:not(:last-child) {
+        margin-right: 0rem;
+    }
+
+    .home__name {
+        font-size: 6rem;
+    }
+
+    .home__h2 {
+        font-size: 2rem;
+    }
+
+    .home__p {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        flex-flow: column
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .section__header {
+        font-size: 4rem;
+    }
+    .section__p {
+        font-size: 1.4rem;
+    }
+
+    .section__h3 {
+        font-size: 2.4rem;
+    }
+    
+    .home__name {
+        font-size: 5rem;
+    }
+
+    .home__h2::before {
+        width: 20px;
+    }
+
+    .home__h2, .home__p {
+        padding-left: 32px;
+    }
+
+    .section-about__element:nth-child(1) {
+        height: 175px;
+        min-width: 240px;
+    }
+
+    .about-list {
+        font-size: 1.2rem;
+    }
+
+    .section-about__my-photo {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .portfolio-list__li {
+        height: 200px;
+        width: 300px;
+    }
+
+    .section-inner {
+        max-width: 90%;
+    }
+
+    .home__name {
+        font-size: 3rem;
+    }
+
+    .home__h2 {
+        font-size: 1.4rem;
+    }
+
+    .home__p {
+        font-size: 1.2rem;
+    }
+
+    .home__h2::before {
+        width: 10px;
+    }
+
+    .home__h2, .home__p {
+        padding-left: 22px;
+    }
+
+    .skills-item {
+        margin-right: 0;
+    }
+
+    .skills-item__element {
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about-list {
+        font-size: 1rem;
+    }
+
+    .section-about__my-photo {
+        min-width: 120px;
+        min-height: 120px;
+    }
+
+    .section-about__element:nth-child(1) {
+        height: 150px;
+    }
+}
