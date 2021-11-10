@@ -221,7 +221,6 @@ a[role='link'] {
 
 .section-about__element:nth-child(2) {
     min-width: 300px;
-    /* margin-left: 2rem; */
 }
 
 .about-list {
