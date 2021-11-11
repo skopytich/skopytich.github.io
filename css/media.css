@@ -50,16 +50,8 @@
 
 @media screen and (max-width: 730px) {
     .portfolio-list__li {
-        height: 300px;
-        width: 500px;
-    }
-
-    .portfolio-list {
-        margin-right: 0rem;
-    }
-
-    .portfolio-list__li {
-        margin-right: 0rem;
+        height: 230px;
+        width: 400px;
     }
 
     .home__name {
@@ -114,15 +106,6 @@
         min-height: 150px;
     }
 
-    .portfolio-list__li {
-        height: 250px;
-        width: 400px;
-    }
-
-    .section-inner {
-        max-width: 90%;
-    }
-
     .home__h2::before {
         width: 15px;
     }
@@ -149,9 +132,16 @@
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 475px) {
+    .section-inner {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
     .portfolio-list__li {
-        height: 215px;
+        height: 190px;
         width: 330px;
     }
 
@@ -191,7 +181,7 @@
     }
 
     .portfolio-list__li {
-        height: 200px;
+        height: 170px;
         width: 300px;
     }
 
